@@ -1,0 +1,31 @@
+1. Access PostgreSQL:
+   'sudo -u postgres psql'
+--------------------------
+
+2. List All Databases:
+   '\l'
+   or
+   '\list'
+   
+--------------------------
+
+3. Connect to a Specific Database:
+   '\c your_database_name'
+   
+--------------------------
+
+4. List All Tables in the Connected Database:
+   '\dt'
+   
+--------------------------
+
+5. Delete a Database:
+   Note do not be currently logged in the posgresql terminal just be in your own ubuntu terminal
+   'sudo -u postgres dropdb your_database_name'
+   
+--------------------------
+
+6. Exit the psql Shell:
+   '\q'
+   
+--------------------------
