@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+}
+
+.toggle-button {
+  padding-top: 10px;
+  font-size: 25px;
+
+}
+
+.notes-dropdown-border {
+  border-width: 3px;
+  border-style: solid;
+  border-color: rgb(197, 245, 255);
+  padding: 0.2em;
+}
+
+.sidebar-content {
+  flex: 1;
+  /* Allow the content to take up available vertical space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center horizontally */
+  justify-content: center;
+  /* Center vertically */
+}
+
+.note-title.text-color {
+  color: rgb(197, 245, 255);
+  font-size: 20px;
+  /* Replace with your desired text color */
+}
+
+.dropdown-li {
+  margin-bottom: 15px;
+  /* Adjust the value as needed to control the spacing */
+}
+
+.note-titles {
+  list-style-type: none;
+  /* Remove default list item marker */
+  padding-left: 1em;
+  text-align: left;
+
+  /* Add left padding to create space for the custom marker */
+}
+
+.note-titles li {
+  position: relative;
+  padding-left: 1em;
+  /* Adjust the padding as needed */
+
+}
+
+.note-titles li::before {
+  content: '\2022';
+  /* Unicode character for a bullet point */
+  color: white;
+  /* Replace with your desired color */
+  position: absolute;
+  left: 0;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 9s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

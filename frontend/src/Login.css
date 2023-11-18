@@ -1,0 +1,52 @@
+.Login-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+.Login-subheader {
+    
+    margin: 0; /* Reset margin to remove default spacing */
+    margin-top: -3vmin;
+    margin-bottom: -1vmin; /* Adjust the bottom margin as needed */
+
+}
+
+.form-group {
+    
+    margin-top: 3vmin;
+
+}
+
+.custom-input {
+    background-color: #68a3a1;
+    border: 1px solid #cccccc; /* Example border style */
+    padding: 8px;
+    border-radius: 6px;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    width: +37vmin;
+    height: 2.5vmin;
+    font-size: 70%;
+}
+
+.login-button{
+    margin-top: 3vmin;
+    width: +10vmin;
+    height: 2.5vmin;
+    border-radius: 6px;
+    background-color: #68a3a1;
+    border: 1px solid #cccccc; /* Example border style */
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.create-account{
+    margin-top: 3vmin;
+    color: white;
+    font-size: 70%;
+
+}

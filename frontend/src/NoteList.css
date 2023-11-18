@@ -1,0 +1,50 @@
+/* NoteList.css */
+
+.notes-menu {
+    /* your existing styles for the notes menu, if any */
+    z-index: 10; /* a value higher than other overlapping elements */
+
+}
+
+.toggle-button {
+    
+    /* your existing styles for the toggle button, if any */
+}
+
+.toggle-button:hover {
+    cursor: pointer;  /* Changes the cursor to a hand on hover */
+
+}
+
+.note-title {
+    /* your existing styles for the note titles, if any */
+    flex:1;
+}
+
+.note-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* ensure it takes the full width of its container */
+
+}
+
+.delete-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;  /* Adjust the size as needed */
+    height: 20px;
+    background-color: #f44336; /* red color for delete */
+    color: white; /* 'X' color */
+    border-radius: 50%; /* circular button */
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* subtle shadow */
+    transition: all 0.3s ease; /* for smooth hover effect */
+}
+
+.delete-icon:hover {
+    background-color: #d32f2f; /* slightly darker shade on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* stronger shadow on hover */
+}
+

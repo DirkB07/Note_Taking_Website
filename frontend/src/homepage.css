@@ -1,0 +1,269 @@
+/* homepage.css */
+.homepage {
+  display: flex;
+  height: 100vh;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu-line {
+  width: 20px;
+  height: 2px;
+  background-color: #282c34;
+  margin: 3px 0;
+}
+
+.note-item {
+  cursor: pointer;
+}
+.selected-note-title {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #9de2ac;
+  font-weight: bold;
+  text-align: center;
+}
+.user-avatar {
+  width: 80px;   /* or any desired size */
+  height: 80px;
+  border-radius: 50%;   /* to make it circular */
+  object-fit: cover;    /* to ensure the image covers the container */
+  padding-left: 10px;
+}
+
+.shared-notes-dropdown {
+  /* Add styles similar to your main notes dropdown */
+  /* Example: */
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+h3 {
+  cursor: pointer;
+}
+.shared-notes-dropdown div {
+  cursor: pointer;
+}
+
+.menu-icon {
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+
+
+
+.sidebar {
+  width: 250px;
+  background-color: #282c34;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  transition: left 0.3s;
+  padding: 20px;
+  text-align: right;
+  z-index: 1000;
+}
+
+.menu-line {
+  color: white;
+  background-color: #ffffff;
+}
+
+.sidebar.show {
+  left: 0;
+}
+
+.sidebar button {
+  display: block;
+  background: none;
+  border: none;
+  color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  transition: margin-left 0.3s;
+}
+
+.content.preview-active {
+  margin-left: -250px;
+}
+
+.header-title {
+  padding: 10px;
+  /* Adjust the padding as needed */
+}
+
+.note-buttons button {
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+.header {
+  padding: 10px;
+  background-color: #282c34;
+  color: white;
+}
+
+.divider {
+  height: 2px;
+  background-color: #68a3a1;
+  /* Change the divider color as needed */
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.preview {
+  padding: 20px;
+  flex: 1;
+  background-color: #282c34;
+  color: white;
+  overflow-y: auto;
+}
+
+.markdown-editor {
+  flex: 1;
+  padding: 20px;
+}
+
+.editor-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 90%;
+}
+
+.editor-pane,
+.preview-pane {
+  flex: 1;
+  padding: 20px;
+}
+
+.editor-pane {
+  overflow-x: hidden;
+}
+
+.editor-pane textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  resize: none;
+  font-size: 16px;
+  /* Adjust font size as needed */
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+}
+
+.preview-pane #preview h1 {
+  color: #282c34;
+  /* Text color for preview */
+}
+
+.top-right-buttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-button,
+.logout-button {
+  background: none;
+  border: none;
+  color: white;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  /* Ensure the overlay is above other content */
+}
+
+.create-note-modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  /* Add a shadow for the modal */
+}
+
+.modal-content {
+  text-align: center;
+}
+
+/* Style the input and select fields as needed */
+#create-note-modal input,
+#create-note-modal select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.modal-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Style the buttons in the modal */
+#create-note-modal button {
+  background-color: #282c34;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Add hover effect to buttons */
+#create-note-modal button:hover {
+  background-color: #1d222b;
+}
+
+.sidebar-content input[type="text"],
+.sidebar-content select {
+  color: white;
+  background-color: #282c34; /* Adjust to match the sidebar background */
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Rounded edges */
+}
+
+h3 {
+
+  color: white;
+  
+}

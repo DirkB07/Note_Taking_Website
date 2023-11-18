@@ -1,0 +1,95 @@
+.Login-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.Login-subheader {
+
+    margin: 0;
+    /* Reset margin to remove default spacing */
+    margin-top: -3vmin;
+    margin-bottom: -1vmin;
+    /* Adjust the bottom margin as needed */
+
+}
+
+.form-group {
+
+    margin-top: 3vmin;
+
+}
+
+.custom-input {
+    background-color: #68a3a1;
+    border: 1px solid #cccccc;
+    /* Example border style */
+    padding: 8px;
+    border-radius: 6px;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    width: +37vmin;
+    height: 2.5vmin;
+    font-size: 70%;
+}
+
+.register-button {
+    margin-top: 3vmin;
+    width: +10vmin;
+    height: 5.5vmin;
+    border-radius: 6px;
+    background-color: #68a3a1;
+    border: 1px solid #cccccc;
+    /* Example border style */
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.delete-button {
+    margin-top: 2.5vmin;
+    width: +10vmin;
+    height: 5vmin;
+    border-radius: 6px;
+    background-color: #d94800;
+    border: 1px solid #cccccc;
+    /* Example border style */
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    padding-left: 10px;
+    /* Add padding to the left side */
+}
+
+.button-container {
+    padding-bottom: 50px;
+    /* Add your desired bottom padding value */
+}
+
+.form-group-dropdown {
+    background-color: #68a3a1;
+    border: 1px solid #cccccc;
+    /* Example border style */
+    padding: 8px;
+    border-radius: 6px;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    width: +37vmin;
+    height: 5vmin;
+    font-size: 70%;
+}
+
+.error-message {
+    color: rgb(255, 0, 0);
+}
+
+.selected-photo {
+    padding-top: 20px;
+    max-width: 100%;
+    /* Ensure the photo doesn't exceed its container */
+    max-height: 150px;
+    /* Set the maximum height of the photo */
+    width: auto;
+    /* Maintain the aspect ratio of the photo */
+    height: auto;
+    /* Ensure the photo doesn't stretch */
+}
